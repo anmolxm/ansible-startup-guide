@@ -1,0 +1,11 @@
+--- 
+- name: executing apache role for slave1
+  become: true
+  hosts: Slave1
+  roles:
+  - apache
+- name: executing nginx role for slave2
+  become: true
+  hosts: Slave2
+  roles:
+  - nginx

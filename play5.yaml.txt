@@ -1,0 +1,11 @@
+---
+- name: running java role for test group
+  hosts: test
+  become: true
+  roles:
+  - java
+- name: running mysql role for prod group
+  hosts: prod
+  become: true
+  roles:
+  - mysql

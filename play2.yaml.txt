@@ -1,0 +1,7 @@
+---
+- name: executing script using playbook
+  hosts: all
+  become: true
+  tasks: 
+  - name: running script
+    script: script2.sh
